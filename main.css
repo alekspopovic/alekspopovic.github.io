@@ -270,6 +270,7 @@ a.contact-button {
 #menu a {
     text-decoration: none;
     height: 100%;
+    margin: 0 15px;
 }
 
 .sticky {
@@ -318,6 +319,21 @@ a.contact-button {
     margin-bottom: 10px;
 }
 
+.visible-card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.card:hover .visible-card-title {
+    opacity: 0;
+}
+
 @media only screen and (max-device-width: 426px) {
     .header-text {
         font-size: 12em;
@@ -332,6 +348,10 @@ a.contact-button {
 	#menu div {
         font-size: 2.7em;
         display: inline-block;
+    }
+
+    #menu a {
+        margin: 0 30px;
     }
 
     .small-header-text {
@@ -407,5 +427,9 @@ a.contact-button {
 
     .footer {
         padding-bottom: 30px;
+    }
+
+    .visible-card-title {
+        display: none;
     }
 }
