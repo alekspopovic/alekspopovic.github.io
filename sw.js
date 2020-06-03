@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-437254f7e1866b741a9f.js"
   },
   {
-    "url": "app-ad9bc0adb139577a6d8d.js"
+    "url": "app-154703dd8ae8cd6d2d5b.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0910ef7768e6d34ab7cfac9fc609a592"
+    "revision": "7f69cdf6013c2117ad1abf48c9c4fb0d"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-ac91495a5202f90f8ab8.js"
@@ -54,7 +54,38 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "4b5bc70c5f3e8b8d8575b1aa5960509a"
+    "revision": "8e9604e8dc9a3574a168e32d9a09f55d"
+  },
+  {
+    "url": "b4e69da19068b2f5d17db31e9fc4bd3c409b0e07-38222176cc10db1d789b.js"
+  },
+  {
+    "url": "component---src-templates-index-js-e4752d20099715b9c4d5.js"
+  },
+  {
+    "url": "page-data/blog/page-data.json",
+    "revision": "56f4343342efed325ad8c25eb9127ee6"
+  },
+  {
+    "url": "component---src-pages-projects-js-937e079c3755af1e6572.js"
+  },
+  {
+    "url": "page-data/projects/page-data.json",
+    "revision": "ef0a865016a83bcdacbe2540b1c09236"
+  },
+  {
+    "url": "component---src-pages-about-me-js-fbd91c5a589dbf5c6217.js"
+  },
+  {
+    "url": "page-data/aboutMe/page-data.json",
+    "revision": "e53231559592bb2bcd7188acb82b29f4"
+  },
+  {
+    "url": "component---src-pages-contact-js-7136d0975dcff7c12e92.js"
+  },
+  {
+    "url": "page-data/contact/page-data.json",
+    "revision": "834bbf3d543e4072836a33f9371aa512"
   },
   {
     "url": "manifest.webmanifest",
@@ -151,7 +182,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-ad9bc0adb139577a6d8d.js`))) {
+  if (!resources || !(await caches.match(`/app-154703dd8ae8cd6d2d5b.js`))) {
     return await fetch(event.request)
   }
 
