@@ -110,17 +110,7 @@ background-size: cover;
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span></code></pre></div>
 <p>Now we need to set up our navigation by using the BrowserRouter which we imported above. First we need to add our links, and React Router has a very neat component that is literally called Link. It’s used for setting up internal urls for use-cases just like this. Instead of href we pass in a “to” prop.</p>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> HomePage <span class="token keyword">from</span> <span class="token string">"./Home"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> BlogPage <span class="token keyword">from</span> <span class="token string">"./Blog"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> NewBlogPostPage <span class="token keyword">from</span> <span class="token string">"./NewBlogPost"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> ContactPage <span class="token keyword">from</span> <span class="token string">"./Contact"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> BrowserRouter<span class="token punctuation">,</span> Route<span class="token punctuation">,</span> Link<span class="token punctuation">,</span> Redirect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react-router-dom"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> SpeechRecognition<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-  useSpeechRecognition<span class="token punctuation">,</span>
-<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react-speech-recognition"</span><span class="token punctuation">;</span>
-
-<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>App<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
       </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">BrowserRouter</span></span><span class="token punctuation">></span></span><span class="token plain-text">
