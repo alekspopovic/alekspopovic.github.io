@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-117beb2b265b2d8fae8e.js"
+    "url": "webpack-runtime-05fb9c4a85e7d3719278.js"
   },
   {
-    "url": "styles.a42955f37fe87c02db99.css"
+    "url": "styles.1f7d4366520a7faa9ce8.css"
   },
   {
     "url": "styles-8636a280cbc61d53ad10.js"
   },
   {
-    "url": "framework-a4656837c5a8f56da58d.js"
+    "url": "framework-437254f7e1866b741a9f.js"
   },
   {
-    "url": "app-3dc4b04142e52b536c06.js"
+    "url": "app-d8094bf7bbfa23bdf27d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "4aafbced2f4b4c7e3df965461ec6d6f6"
+    "revision": "2091c40578ecd89a93538cc7de40a94d"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-84df01cf41babe440d0c.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-379649f957bef5221456.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -54,30 +54,27 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "dbee006d5d768e91b837c5e2cc5f24d7"
+    "revision": "33ca04a0c9735cda7cf69c9992044b67"
   },
   {
     "url": "61f51f98958ae0fe8ce9ea0d348a566bf49abbaa-de540b6c51e8ea0d63b0.js"
   },
   {
-    "url": "component---src-templates-blog-js-199ff286fe1ee046acd7.js"
+    "url": "component---src-templates-blog-js-b6898bc18ce0f7025e63.js"
   },
   {
     "url": "page-data/blog/page-data.json",
     "revision": "4fc27c18f35a7b0ce8cfa0ab7455faa4"
   },
   {
-    "url": "bb2f60ae9db6d19152cef4f3531c0800ea066043-c9cc68c848606be73da0.js"
-  },
-  {
-    "url": "component---src-pages-projects-js-020f52bc368d81e232ab.js"
+    "url": "component---src-pages-projects-js-6fc3d6c332e0c6ee7793.js"
   },
   {
     "url": "page-data/projects/page-data.json",
     "revision": "ef0a865016a83bcdacbe2540b1c09236"
   },
   {
-    "url": "component---src-pages-contact-js-3aa65220d66390681f11.js"
+    "url": "component---src-pages-contact-js-25bf448ebe63a0650408.js"
   },
   {
     "url": "page-data/contact/page-data.json",
@@ -178,7 +175,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-3dc4b04142e52b536c06.js`))) {
+  if (!resources || !(await caches.match(`/app-d8094bf7bbfa23bdf27d.js`))) {
     return await fetch(event.request)
   }
 
